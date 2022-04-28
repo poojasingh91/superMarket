@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <title>
+      Super Market-Online Shopping Centre
+    </title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="keywords"
+      content="Super Market Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+            Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+    />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+                 function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- //for-mobile-apps -->
+    <link
+      href="assets/css/bootstrap.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="assets/css/style.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!-- font-awesome icons -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- //font-awesome icons -->
+    <!-- js -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <!-- //js -->
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="assets/js/move-top.js"></script>
+    <script type="text/javascript" src="assets/js/easing.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          $("html,body").animate(
+            { scrollTop: $(this.hash).offset().top },
+            1000
+          );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- top-header and slider -->
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        /*
+            		var defaults = {
+            		containerID: 'toTop', // fading element id
+            		containerHoverID: 'toTopHover', // fading element hover id
+            		scrollSpeed: 1200,
+            		easingType: 'linear' 
+            		};
+            	*/
+
+        $().UItoTop({ easingType: "easeOutQuart" });
+      });
+    </script>
+    <!-- //here ends scrolling icon -->
+    <script src="assets/js/minicart.min.js"></script>
+    <!-- <script>
+      // Mini Cart
+      window.user = {
+          name: "test"
+        };
+      paypal.minicart.render();
+
+      if (~window.location.search.indexOf("reset=true")) {
+        paypal.minicart.reset();
+      }
+    </script> -->
+    <!-- main slider-banner -->
+    <script src="assets/js/skdslider.min.js"></script>
+    <link href="assets/css/skdslider.css" rel="stylesheet" />
+    <script type="text/javascript">
+      jQuery(document).ready(function () {
+        jQuery("#demo1").skdslider({
+          delay: 5000,
+          animationSpeed: 2000,
+          showNextPrev: true,
+          showPlayButton: true,
+          autoSlide: true,
+          animationType: "fading",
+        });
+
+        jQuery("#responsive").change(function () {
+          $("#responsive_wrapper").width(jQuery(this).val());
+        });
+      });
+      if (jQuery("#demo1")) {
+        jQuery("#demo1").skdslider({
+          delay: 5000,
+          animationSpeed: 2000,
+          showNextPrev: true,
+          showPlayButton: true,
+          autoSlide: true,
+          animationType: "fading",
+        });
+      }
+    </script>
+    <script src="assets/js/responsiveslides.min.js"></script>
+    <script>
+      {
+        /* // You can also use "$(window).load(function() {" */
+      }
+      $(function () {
+        // Slideshow 5
+        $("#slider5").responsiveSlides({
+          auto: true,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function (c) {
+        $(".close1").on("click", function (c) {
+          $(".rem1").fadeOut("slow", function (c) {
+            $(".rem1").remove();
+          });
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function (c) {
+        $(".close2").on("click", function (c) {
+          $(".rem2").fadeOut("slow", function (c) {
+            $(".rem2").remove();
+          });
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function (c) {
+        $(".close3").on("click", function (c) {
+          $(".rem3").fadeOut("slow", function (c) {
+            $(".rem3").remove();
+          });
+        });
+      });
+    </script>
+    <script>
+      $(".value-plus").on("click", function () {
+        var divUpd = $(this).parent().find(".value"),
+          newVal = parseInt(divUpd.text(), 10) + 1;
+        divUpd.text(newVal);
+      });
+
+      $(".value-minus").on("click", function () {
+        var divUpd = $(this).parent().find(".value"),
+          newVal = parseInt(divUpd.text(), 10) - 1;
+        if (newVal >= 1) divUpd.text(newVal);
+      });
+    </script>
+    <!-- script for tabs -->
+    <script type="text/javascript">
+      $(function () {
+        var menu_ul = $(".faq > li > ul"),
+          menu_a = $(".faq > li > a");
+
+        menu_ul.hide();
+
+        menu_a.click(function (e) {
+          e.preventDefault();
+          if (!$(this).hasClass("active")) {
+            menu_a.removeClass("active");
+            menu_ul.filter(":visible").slideUp("normal");
+            $(this)
+              .addClass("active")
+              .next()
+              .stop(true, true)
+              .slideDown("normal");
+          } else {
+            $(this).removeClass("active");
+            $(this).next().stop(true, true).slideUp("normal");
+          }
+        });
+      });
+    </script>
+    <!-- script for tabs -->
+    <!-- //main slider-banner -->
+  </body>
+</html>
